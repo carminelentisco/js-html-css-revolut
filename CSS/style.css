@@ -36,6 +36,15 @@ body {
 
 .menu-right {
     display: flex;
+    align-items: center;
+}
+
+.header-menu-button {
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #d8338b;
+    border: none;
+    border-radius: 15px;
 }
 
 .menu-left img {
@@ -59,12 +68,42 @@ body {
     transition: color .4s;
 }
 
-.header-menu-button {
-    background-color: #d8338b;
-}
-
+.menu-list-right li a:hover,
 .menu-list-left li a:hover {
     color: #000;
+}
+
+.menu-list-right li a i {
+    font-size: 10px;
+    margin: 0 0 0 5px;
+    transition: transform .4s;
+}
+
+.menu-list-right .arrow:hover i {
+    transform: rotate(180deg);
+}
+
+/* Submenu */
+
+.menu-list-right li.with-dropdown {
+    position: relative;
+}
+
+.submenu {
+    display: none; /* <--- jQuery */
+    width: 200px;
+    margin: 10px 0 0 0;
+    background-color: #fff;
+    position: absolute;
+    right: -148px;
+    top: 100%;
+    border: 1px solid transparent;
+    filter: drop-shadow( 0px 2px 3px rgba(0, 0, 0, 0.2));
+}
+
+.submenu-list {
+    display: flex;
+    flex-direction: column;
 }
 
 
