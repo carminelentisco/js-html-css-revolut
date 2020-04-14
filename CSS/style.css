@@ -91,7 +91,7 @@ body {
 
 .submenu {
     display: none; /* <--- jQuery */
-    width: 200px;
+    width: 280px;
     margin: 10px 0 0 0;
     background-color: #fff;
     position: absolute;
@@ -106,4 +106,16 @@ body {
     flex-direction: column;
 }
 
+.submenu-list li {
+    margin: 0;
+    padding: 10px 10px;
+    transition: background .4s ;
+}
 
+.submenu-list li:hover {
+    background-color: #e2e2e2;
+}
+
+.submenu-list li:hover a {
+    color: #000;
+}
