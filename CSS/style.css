@@ -79,10 +79,6 @@ body {
     transition: transform .4s;
 }
 
-.menu-list-right .arrow:hover i {
-    transform: rotate(180deg);
-}
-
 /* Submenu */
 
 .menu-list-right li.with-dropdown {
